@@ -1,0 +1,38 @@
+$close-bug: #ec407a;
+$open-bug: #1de9b6c2;
+$text-color: #8e9192;
+$header-color: #ffffffee;
+$delete-btn: #c04848d8;
+$close-btn: #ff8b80d3;
+$add-btn: #956fff8f;
+$background-color: #1f292e;
+$card-header: #3f535e;
+$card-color: #263238;
+$form-color: #5972a8;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin transition-ease {
+  transition: all 0.25s ease;
+}
+
+@mixin tablet {
+  @media screen and (min-width: 481px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}

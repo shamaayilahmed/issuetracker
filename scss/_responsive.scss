@@ -1,0 +1,47 @@
+@include laptop {
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.08rem;
+  }
+  .form-section {
+    #form {
+      .form-group {
+        label {
+          font-size: 1.1rem;
+        }
+        input,
+        select {
+          font-size: 1rem;
+        }
+      }
+      button {
+        font-size: 1rem;
+      }
+    }
+  }
+  #list-section {
+    #list {
+      grid-template-columns: repeat(3, 1fr);
+      .card {
+        header {
+          p {
+            font-size: 1.2rem;
+          }
+          h6 {
+            font-size: 0.75rem;
+          }
+        }
+        section {
+          button {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}

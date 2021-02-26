@@ -1,0 +1,62 @@
+#list-section {
+  #list {
+    display: grid;
+    .card {
+      overflow: hidden;
+      border-radius: 8px;
+      background: $card-color;
+      margin: 0.5rem;
+      box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.103);
+      &:hover {
+        box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.26);
+        @include transition-ease;
+      }
+      header {
+        padding: 0.7rem 1rem;
+        background-color: $card-header;
+        h3 {
+          padding: 0.1rem 0;
+        }
+        p {
+          padding: 0.1rem 0;
+          span {
+            box-shadow: 1px 1px 1px 1px rgba(41, 41, 41, 0.11);
+            color: rgba(235, 235, 235, 0.856);
+            border-radius: 2px;
+            font-size: 80%;
+            padding: 1px 5px;
+            background-color: $open-bug;
+          }
+        }
+      }
+      section {
+        padding: 0.5rem 1rem;
+        p {
+          display: inline;
+          margin-right: 10px;
+          i {
+            margin: 5px;
+            color: rgb(146, 146, 146);
+          }
+        }
+        button {
+          margin-top: 5px;
+          padding: 2px 5px;
+          display: inline-block;
+          cursor: pointer;
+          color: rgba(233, 233, 233, 0.897);
+          border: none;
+          outline: none;
+          border-radius: 2px;
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.103);
+          &.close-btn {
+            background: $close-btn;
+          }
+          &.delete-btn {
+            background: $delete-btn;
+          }
+        }
+      }
+    }
+  }
+}
